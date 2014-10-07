@@ -11,9 +11,12 @@ $(document).ready(
 		function () {
 			var content = $('input[name=box]').val();
 			var remove = "<span class='remove'>Remove</span>";
-			$('ul').append('<div class="item"><li>' + content + ' ' + remove + '</li></div>');
+			if (content != "") {
+				$('ul').append('<div class="item"><li>' + content + ' ' + remove + '</li></div>');
+				$('input').val('');
+			}
 		});
-	$(document).on('click', '.item', function () {
-		$(this).remove();
+	$(document).on('click', '.remove', function () {
+		$(this).parent().parent().remove();
 	});
 });
