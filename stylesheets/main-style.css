@@ -6,8 +6,15 @@
 
 #main
 {
-	width: 270px;
+	width: 450px;
 	margin: 0 auto;
+}
+
+.remove_div
+{
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
 }
 
 #button
@@ -16,13 +23,12 @@
 	border-radius: 5px;
 	width: 100px;
 	height: 25px;
-	display: inline-block;
-	
+	display: inline-block;	
 }
 
 input
 {
-	width: 250px;
+	width: 350px;
 	padding: 5px 5px 5px 5px;
 	border-radius: 2px;
 }
